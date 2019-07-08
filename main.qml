@@ -1,6 +1,6 @@
 import QtQuick 2.9
 import QtQuick.Window 2.2
-import QtMultimedia 5.12
+import QtMultimedia 5.0
 
 Window
 {
@@ -76,9 +76,10 @@ Window
             width: 480
             height: 270
 
-            source: "file:///home/george/Videos/GOPR0137.MP4"
+            source: "file:///tmp/0.mp4"
             autoPlay: true
             fillMode: VideoOutput.Stretch
+            loops: MediaPlayer.Infinite
 
             MouseArea
             {
@@ -98,9 +99,10 @@ Window
             width: 480
             height: 270
 
-            source: "file:///home/george/Videos/GOPR0183.MP4"
+            source: "file:///tmp/1.mp4"
             autoPlay: true
             fillMode: VideoOutput.Stretch
+            loops: MediaPlayer.Infinite
 
             MouseArea
             {
@@ -120,9 +122,10 @@ Window
             width: 480
             height: 270
 
-            source: "file:///home/george/Videos/GOPR0160.MP4"
+            source: "file:///tmp/2.mp4"
             autoPlay: true
             fillMode: VideoOutput.Stretch
+            loops: MediaPlayer.Infinite
         }
 
         Video
@@ -131,9 +134,10 @@ Window
             width: 480
             height: 270
 
-            source: "file:///home/george/Videos/GOPR0152.MP4"
+            source: "file:///tmp/3.mp4"
             autoPlay: true
             fillMode: VideoOutput.Stretch
+            loops: MediaPlayer.Infinite
         }
     }
 }
